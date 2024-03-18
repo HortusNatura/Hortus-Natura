@@ -1,0 +1,219 @@
+2023-12-07T11:32:16+00:00 CRITICAL Uncaught Exception: Kubio register block missing metadata. Path: /home/ftnraqfr/public_html/wp-content/plugins/kubio/build/block-library/blocks/button/block.json in /home/ftnraqfr/public_html/wp-content/plugins/kubio/lib/src/Core/Registry.php:47
+Stack trace:
+#0 /home/ftnraqfr/public_html/wp-content/plugins/kubio/build/block-library/blocks/button/index.php(9): Kubio\Core\Registry::registerBlock()
+#1 /home/ftnraqfr/public_html/wp-content/plugins/kubio/lib/kubio-block-library.php(183): require_once('/home/ftnraqfr/...')
+#2 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(324): kubio_register_block_types()
+#3 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#4 /home/ftnraqfr/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#5 /home/ftnraqfr/public_html/wp-settings.php(643): do_action()
+#6 /home/ftnraqfr/public_html/wp-config.php(96): require_once('/home/ftnraqfr/...')
+#7 /home/ftnraqfr/public_html/wp-load.php(50): require_once('/home/ftnraqfr/...')
+#8 /home/ftnraqfr/public_html/wp-blog-header.php(13): require_once('/home/ftnraqfr/...')
+#9 /home/ftnraqfr/public_html/index.php(17): require('/home/ftnraqfr/...')
+#10 {main}
+  thrown dans /home/ftnraqfr/public_html/wp-content/plugins/kubio/lib/src/Core/Registry.php à la ligne 47
+
+2023-12-07T11:34:10+00:00 CRITICAL Uncaught Error: Failed opening required '/home/ftnraqfr/public_html/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version2/class-wc-rest-customer-downloads-v2-controller.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ftnraqfr/public_html/wp-content/plugins/woocommerce/vendor/jetpack-autoloader/class-php-autoloader.php:90
+Stack trace:
+#0 /home/ftnraqfr/public_html/wp-content/plugins/woocommerce/includes/rest-api/Server.php(42): Automattic\Jetpack\Autoloader\jp2d4db689c5af5edbed15ffb53d752898\PHP_Autoloader::load_class()
+#1 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(324): Automattic\WooCommerce\RestApi\Server->register_rest_routes()
+#2 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#3 /home/ftnraqfr/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /home/ftnraqfr/public_html/wp-includes/rest-api.php(593): do_action()
+#5 /home/ftnraqfr/public_html/wp-includes/rest-api.php(417): rest_get_server()
+#6 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(324): rest_api_loaded()
+#7 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /home/ftnraqfr/public_html/wp-includes/plugin.php(565): WP_Hook->do_action()
+#9 /home/ftnraqfr/public_html/wp-includes/class-wp.php(418): do_action_ref_array()
+#10 /home/ftnraqfr/public_html/wp-includes/class-wp.php(813): WP->parse_request()
+#11 /home/ftnraqfr/public_html/wp-includes/functions.php(1336): WP->main()
+#12 /home/ftnraqfr/public_html/wp-blog-header.php(16): wp()
+#13 /home/ftnraqfr/public_html/index.php(17): require('/home/ftnraqfr/...')
+#14 {main}
+  thrown dans /home/ftnraqfr/public_html/wp-content/plugins/woocommerce/vendor/jetpack-autoloader/class-php-autoloader.php à la ligne 90
+
+2023-12-07T11:34:10+00:00 CRITICAL Uncaught Error: Failed opening required '/home/ftnraqfr/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/StoreApi/Schemas/V1/OrderFeeSchema.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ftnraqfr/public_html/wp-content/plugins/woocommerce/vendor/jetpack-autoloader/class-php-autoloader.php:90
+Stack trace:
+#0 /home/ftnraqfr/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/StoreApi/SchemaController.php(50): Automattic\Jetpack\Autoloader\jp2d4db689c5af5edbed15ffb53d752898\PHP_Autoloader::load_class()
+#1 /home/ftnraqfr/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/StoreApi/StoreApi.php(85): Automattic\WooCommerce\StoreApi\SchemaController->__construct()
+#2 /home/ftnraqfr/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Registry/AbstractDependencyType.php(42): Automattic\WooCommerce\StoreApi\StoreApi::Automattic\WooCommerce\StoreApi\{closure}()
+#3 /home/ftnraqfr/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Registry/SharedType.php(28): Automattic\WooCommerce\Blocks\Registry\AbstractDependencyType->resolve_value()
+#4 /home/ftnraqfr/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Registry/Container.php(96): Automattic\WooCommerce\Blocks\Registry\SharedType->get()
+#5 /home/ftnraqfr/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/StoreApi/StoreApi.php(77): Automattic\WooCommerce\Blocks\Registry\Container->get()
+#6 /home/ftnraqfr/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Registry/AbstractDependencyType.php(42): Automattic\WooCommerce\StoreApi\StoreApi::Automattic\WooCommerce\StoreApi\{closure}()
+#7 /home/ftnraqfr/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Registry/SharedType.php(28): Automattic\WooCommerce\Blocks\Registry\AbstractDependencyType->resolve_value()
+#8 /home/ftnraqfr/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Registry/Container.php(96): Automattic\WooCommerce\Blocks\Registry\SharedType->get()
+#9 /home/ftnraqfr/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/StoreApi/StoreApi.php(27): Automattic\WooCommerce\Blocks\Registry\Container->get()
+#10 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(324): Automattic\WooCommerce\StoreApi\StoreApi->Automattic\WooCommerce\StoreApi\{closure}()
+#11 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#12 /home/ftnraqfr/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#13 /home/ftnraqfr/public_html/wp-includes/rest-api.php(593): do_action()
+#14 /home/ftnraqfr/public_html/wp-includes/rest-api.php(417): rest_get_server()
+#15 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(324): rest_api_loaded()
+#16 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#17 /home/ftnraqfr/public_html/wp-includes/plugin.php(565): WP_Hook->do_action()
+#18 /home/ftnraqfr/public_html/wp-includes/class-wp.php(418): do_action_ref_array()
+#19 /home/ftnraqfr/public_html/wp-includes/class-wp.php(813): WP->parse_request()
+#20 /home/ftnraqfr/public_html/wp-includes/functions.php(1336): WP->main()
+#21 /home/ftnraqfr/public_html/wp-blog-header.php(16): wp()
+#22 /home/ftnraqfr/public_html/index.php(17): require('/home/ftnraqfr/...')
+#23 {main}
+  thrown dans /home/ftnraqfr/public_html/wp-content/plugins/woocommerce/vendor/jetpack-autoloader/class-php-autoloader.php à la ligne 90
+
+2023-12-07T11:34:10+00:00 CRITICAL Uncaught Exception: Kubio register block missing metadata. Path: /home/ftnraqfr/public_html/wp-content/plugins/kubio/build/block-library/blocks/navigation/blocks/navigation/block.json in /home/ftnraqfr/public_html/wp-content/plugins/kubio/lib/src/Core/Registry.php:47
+Stack trace:
+#0 /home/ftnraqfr/public_html/wp-content/plugins/kubio/build/block-library/blocks/navigation/index.php(147): Kubio\Core\Registry::registerBlock()
+#1 /home/ftnraqfr/public_html/wp-content/plugins/kubio/lib/kubio-block-library.php(183): require_once('/home/ftnraqfr/...')
+#2 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(324): kubio_register_block_types()
+#3 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#4 /home/ftnraqfr/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#5 /home/ftnraqfr/public_html/wp-settings.php(643): do_action()
+#6 /home/ftnraqfr/public_html/wp-config.php(96): require_once('/home/ftnraqfr/...')
+#7 /home/ftnraqfr/public_html/wp-load.php(50): require_once('/home/ftnraqfr/...')
+#8 /home/ftnraqfr/public_html/wp-blog-header.php(13): require_once('/home/ftnraqfr/...')
+#9 /home/ftnraqfr/public_html/index.php(17): require('/home/ftnraqfr/...')
+#10 {main}
+  thrown dans /home/ftnraqfr/public_html/wp-content/plugins/kubio/lib/src/Core/Registry.php à la ligne 47
+
+2023-12-07T11:41:06+00:00 CRITICAL Uncaught Error: Failed opening required '/home/ftnraqfr/public_html/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-api-client.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ftnraqfr/public_html/wp-content/plugins/woocommerce-payments/includes/class-wc-payments.php:930
+Stack trace:
+#0 /home/ftnraqfr/public_html/wp-content/plugins/woocommerce-payments/includes/class-wc-payments.php(383): WC_Payments::create_api_client()
+#1 /home/ftnraqfr/public_html/wp-content/plugins/woocommerce-payments/woocommerce-payments.php(146): WC_Payments::init()
+#2 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(324): wcpay_init()
+#3 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#4 /home/ftnraqfr/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#5 /home/ftnraqfr/public_html/wp-settings.php(506): do_action()
+#6 /home/ftnraqfr/public_html/wp-config.php(96): require_once('/home/ftnraqfr/...')
+#7 /home/ftnraqfr/public_html/wp-load.php(50): require_once('/home/ftnraqfr/...')
+#8 /home/ftnraqfr/public_html/wp-blog-header.php(13): require_once('/home/ftnraqfr/...')
+#9 /home/ftnraqfr/public_html/index.php(17): require('/home/ftnraqfr/...')
+#10 {main}
+  thrown dans /home/ftnraqfr/public_html/wp-content/plugins/woocommerce-payments/includes/class-wc-payments.php à la ligne 930
+
+2023-12-07T11:47:29+00:00 CRITICAL Uncaught Error: Failed opening required '/home/ftnraqfr/public_html/wp-content/plugins/forminator/addons/pro/mailchimp/class-forminator-addon-mailchimp-quiz-settings.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ftnraqfr/public_html/wp-content/plugins/forminator/addons/pro/mailchimp/mailchimp.php:25
+Stack trace:
+#0 /home/ftnraqfr/public_html/wp-content/plugins/forminator/addons/class-addon-autoload.php(74): include_once()
+#1 /home/ftnraqfr/public_html/wp-content/plugins/forminator/forminator.php(335): Forminator_Addon_Autoload->load()
+#2 /home/ftnraqfr/public_html/wp-content/plugins/forminator/forminator.php(310): Forminator->load_forminator_addons()
+#3 /home/ftnraqfr/public_html/wp-content/plugins/forminator/forminator.php(103): Forminator->init_addons()
+#4 /home/ftnraqfr/public_html/wp-content/plugins/forminator/forminator.php(84): Forminator->__construct()
+#5 /home/ftnraqfr/public_html/wp-content/plugins/forminator/forminator.php(505): Forminator::get_instance()
+#6 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(324): forminator()
+#7 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /home/ftnraqfr/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /home/ftnraqfr/public_html/wp-settings.php(506): do_action()
+#10 /home/ftnraqfr/public_html/wp-config.php(96): require_once('/home/ftnraqfr/...')
+#11 /home/ftnraqfr/public_html/wp-load.php(50): require_once('/home/ftnraqfr/...')
+#12 /home/ftnraqfr/public_html/wp-blog-header.php(13): require_once('/home/ftnraqfr/...')
+#13 /home/ftnraqfr/public_html/index.php(17): require('/home/ftnraqfr/...')
+#14 {main}
+  thrown dans /home/ftnraqfr/public_html/wp-content/plugins/forminator/addons/pro/mailchimp/mailchimp.php à la ligne 25
+
+2023-12-07T11:47:29+00:00 CRITICAL Uncaught Error: Failed opening required '/home/ftnraqfr/public_html/wp-content/plugins/forminator/addons/pro/mailchimp/class-forminator-addon-mailchimp-quiz-settings.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ftnraqfr/public_html/wp-content/plugins/forminator/addons/pro/mailchimp/mailchimp.php:25
+Stack trace:
+#0 /home/ftnraqfr/public_html/wp-content/plugins/forminator/addons/class-addon-autoload.php(74): include_once()
+#1 /home/ftnraqfr/public_html/wp-content/plugins/forminator/forminator.php(335): Forminator_Addon_Autoload->load()
+#2 /home/ftnraqfr/public_html/wp-content/plugins/forminator/forminator.php(310): Forminator->load_forminator_addons()
+#3 /home/ftnraqfr/public_html/wp-content/plugins/forminator/forminator.php(103): Forminator->init_addons()
+#4 /home/ftnraqfr/public_html/wp-content/plugins/forminator/forminator.php(84): Forminator->__construct()
+#5 /home/ftnraqfr/public_html/wp-content/plugins/forminator/forminator.php(505): Forminator::get_instance()
+#6 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(324): forminator()
+#7 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /home/ftnraqfr/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /home/ftnraqfr/public_html/wp-settings.php(506): do_action()
+#10 /home/ftnraqfr/public_html/wp-config.php(96): require_once('/home/ftnraqfr/...')
+#11 /home/ftnraqfr/public_html/wp-load.php(50): require_once('/home/ftnraqfr/...')
+#12 /home/ftnraqfr/public_html/wp-blog-header.php(13): require_once('/home/ftnraqfr/...')
+#13 /home/ftnraqfr/public_html/index.php(17): require('/home/ftnraqfr/...')
+#14 {main}
+  thrown dans /home/ftnraqfr/public_html/wp-content/plugins/forminator/addons/pro/mailchimp/mailchimp.php à la ligne 25
+
+2023-12-07T11:52:42+00:00 CRITICAL Uncaught Error: Failed opening required '/home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/guzzlehttp/guzzle/src/Handler/CurlHandler.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ftnraqfr/public_html/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php:90
+Stack trace:
+#0 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/guzzlehttp/guzzle/src/Utils.php(92): Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ12_9\al3_0_2\PHP_Autoloader::load_class()
+#1 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/guzzlehttp/guzzle/src/HandlerStack.php(49): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\GuzzleHttp\Utils::chooseHandler()
+#2 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/src/Internal/DependencyManagement/GoogleServiceProvider.php(134): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\GuzzleHttp\HandlerStack::create()
+#3 [internal function]: Automattic\WooCommerce\GoogleListingsAndAds\Internal\DependencyManagement\GoogleServiceProvider->Automattic\WooCommerce\GoogleListingsAndAds\Internal\DependencyManagement\{closure}()
+#4 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Definition/Definition.php(239): call_user_func_array()
+#5 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Definition/Definition.php(198): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->resolveCallable()
+#6 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Definition/DefinitionAggregate.php(94): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->resolve()
+#7 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Container.php(157): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\DefinitionAggregate->resolve()
+#8 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Argument/ArgumentResolverTrait.php(45): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Container->get()
+#9 [internal function]: Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Argument\{closure}()
+#10 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Argument/ArgumentResolverTrait.php(19): array_map()
+#11 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Definition/Definition.php(269): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->resolveArguments()
+#12 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Definition/Definition.php(216): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->invokeMethods()
+#13 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Definition/DefinitionAggregate.php(94): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->resolve()
+#14 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Container.php(157): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\DefinitionAggregate->resolve()
+#15 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Argument/ArgumentResolverTrait.php(45): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Container->get()
+#16 [internal function]: Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Argument\{closure}()
+#17 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Argument/ArgumentResolverTrait.php(19): array_map()
+#18 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Definition/Definition.php(253): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->resolveArguments()
+#19 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Definition/Definition.php(212): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->resolveClass()
+#20 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Definition/DefinitionAggregate.php(94): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->resolve()
+#21 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Container.php(157): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\DefinitionAggregate->resolve()
+#22 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Container.php(178): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Container->get()
+#23 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Argument/ArgumentResolverTrait.php(45): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Container->get()
+#24 [internal function]: Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Argument\{closure}()
+#25 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Argument/ArgumentResolverTrait.php(19): array_map()
+#26 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Definition/Definition.php(253): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->resolveArguments()
+#27 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Definition/Definition.php(212): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->resolveClass()
+#28 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Definition/DefinitionAggregate.php(106): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->resolve()
+#29 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Container.php(162): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\DefinitionAggregate->resolveTagged()
+#30 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/vendor/league/container/src/Container.php(178): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Container->get()
+#31 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/src/Container.php(90): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Container->get()
+#32 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/src/Infrastructure/GoogleListingsAndAdsPlugin.php(130): Automattic\WooCommerce\GoogleListingsAndAds\Container->get()
+#33 /home/ftnraqfr/public_html/wp-content/plugins/google-listings-and-ads/src/Infrastructure/GoogleListingsAndAdsPlugin.php(91): Automattic\WooCommerce\GoogleListingsAndAds\Infrastructure\GoogleListingsAndAdsPlugin->maybe_register_services()
+#34 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(324): Automattic\WooCommerce\GoogleListingsAndAds\Infrastructure\GoogleListingsAndAdsPlugin->Automattic\WooCommerce\GoogleListingsAndAds\Infrastructure\{closure}()
+#35 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#36 /home/ftnraqfr/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#37 /home/ftnraqfr/public_html/wp-settings.php(506): do_action()
+#38 /home/ftnraqfr/public_html/wp-config.php(96): require_once('/home/ftnraqfr/...')
+#39 /home/ftnraqfr/public_html/wp-load.php(50): require_once('/home/ftnraqfr/...')
+#40 /home/ftnraqfr/public_html/wp-blog-header.php(13): require_once('/home/ftnraqfr/...')
+#41 /home/ftnraqfr/public_html/index.php(17): require('/home/ftnraqfr/...')
+#42 {main}
+  thrown dans /home/ftnraqfr/public_html/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php à la ligne 90
+
+2023-12-07T11:52:42+00:00 CRITICAL Uncaught Error: Failed opening required '/home/ftnraqfr/public_html/wp-content/plugins/woocommerce-payments/includes/multi-currency/Compatibility/BaseCompatibility.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ftnraqfr/public_html/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php:90
+Stack trace:
+#0 /home/ftnraqfr/public_html/wp-content/plugins/woocommerce-payments/includes/multi-currency/Compatibility.php(30): Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ12_9\al3_0_2\PHP_Autoloader::load_class()
+#1 /home/ftnraqfr/public_html/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php(90): require('/home/ftnraqfr/...')
+#2 /home/ftnraqfr/public_html/wp-content/plugins/woocommerce-payments/includes/multi-currency/MultiCurrency.php(222): Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ12_9\al3_0_2\PHP_Autoloader::load_class()
+#3 /home/ftnraqfr/public_html/wp-content/plugins/woocommerce-payments/includes/multi-currency/MultiCurrency.php(199): WCPay\MultiCurrency\MultiCurrency->__construct()
+#4 /home/ftnraqfr/public_html/wp-content/plugins/woocommerce-payments/includes/multi-currency/wc-payments-multi-currency.php(35): WCPay\MultiCurrency\MultiCurrency::instance()
+#5 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(324): WC_Payments_Multi_Currency()
+#6 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /home/ftnraqfr/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /home/ftnraqfr/public_html/wp-settings.php(506): do_action()
+#9 /home/ftnraqfr/public_html/wp-config.php(96): require_once('/home/ftnraqfr/...')
+#10 /home/ftnraqfr/public_html/wp-load.php(50): require_once('/home/ftnraqfr/...')
+#11 /home/ftnraqfr/public_html/wp-blog-header.php(13): require_once('/home/ftnraqfr/...')
+#12 /home/ftnraqfr/public_html/index.php(17): require('/home/ftnraqfr/...')
+#13 {main}
+  thrown dans /home/ftnraqfr/public_html/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php à la ligne 90
+
+2023-12-07T11:52:42+00:00 CRITICAL Uncaught Error: Interface "MailPoetVendor\Doctrine\DBAL\ForwardCompatibility\DriverStatement" not found in /home/ftnraqfr/public_html/wp-content/plugins/mailpoet/vendor-prefixed/doctrine/dbal/lib/Doctrine/DBAL/ForwardCompatibility/Result.php:16
+Stack trace:
+#0 /home/ftnraqfr/public_html/wp-content/plugins/kubio/vendor/composer/ClassLoader.php(444): include()
+#1 /home/ftnraqfr/public_html/wp-content/plugins/kubio/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile()
+#2 /home/ftnraqfr/public_html/wp-content/plugins/mailpoet/vendor-prefixed/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(538): Composer\Autoload\ClassLoader->loadClass()
+#3 /home/ftnraqfr/public_html/wp-content/plugins/mailpoet/vendor-prefixed/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(509): MailPoetVendor\Doctrine\DBAL\Connection->ensureForwardCompatibilityStatement()
+#4 /home/ftnraqfr/public_html/wp-content/plugins/mailpoet/vendor-prefixed/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(476): MailPoetVendor\Doctrine\DBAL\Connection->executeQuery()
+#5 /home/ftnraqfr/public_html/wp-content/plugins/mailpoet/vendor-prefixed/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php(73): MailPoetVendor\Doctrine\ORM\Persisters\Entity\BasicEntityPersister->loadAll()
+#6 /home/ftnraqfr/public_html/wp-content/plugins/mailpoet/vendor-prefixed/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php(68): MailPoetVendor\Doctrine\ORM\EntityRepository->findBy()
+#7 /home/ftnraqfr/public_html/wp-content/plugins/mailpoet/lib/Doctrine/Repository.php(84): MailPoetVendor\Doctrine\ORM\EntityRepository->findAll()
+#8 /home/ftnraqfr/public_html/wp-content/plugins/mailpoet/lib/Settings/SettingsController.php(147): MailPoet\Doctrine\Repository->findAll()
+#9 /home/ftnraqfr/public_html/wp-content/plugins/mailpoet/lib/Settings/SettingsController.php(37): MailPoet\Settings\SettingsController->ensureLoaded()
+#10 /home/ftnraqfr/public_html/wp-content/plugins/mailpoet/lib/Mailer/WordPress/WordpressMailerReplacer.php(44): MailPoet\Settings\SettingsController->get()
+#11 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(324): MailPoet\Mailer\WordPress\WordpressMailerReplacer->replaceWordPressMailer()
+#12 /home/ftnraqfr/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#13 /home/ftnraqfr/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#14 /home/ftnraqfr/public_html/wp-settings.php(506): do_action()
+#15 /home/ftnraqfr/public_html/wp-config.php(96): require_once('/home/ftnraqfr/...')
+#16 /home/ftnraqfr/public_html/wp-load.php(50): require_once('/home/ftnraqfr/...')
+#17 /home/ftnraqfr/public_html/wp-blog-header.php(13): require_once('/home/ftnraqfr/...')
+#18 /home/ftnraqfr/public_html/index.php(17): require('/home/ftnraqfr/...')
+#19 {main}
+  thrown dans /home/ftnraqfr/public_html/wp-content/plugins/mailpoet/vendor-prefixed/doctrine/dbal/lib/Doctrine/DBAL/ForwardCompatibility/Result.php à la ligne 16
+

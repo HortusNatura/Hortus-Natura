@@ -1,0 +1,8 @@
+# START YOAST BLOCK
+# ---------------------------
+User-agent: *
+Disallow:
+
+Sitemap: https://l2gr1.ephec.info/sitemap_index.xml
+# ---------------------------
+# END YOAST BLOCK
